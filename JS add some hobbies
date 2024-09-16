@@ -1,0 +1,11 @@
+// You can dynamically update your hobbies or experience here
+document.addEventListener("DOMContentLoaded", function () {
+    const hobbies = ["Learning English", "Football", "Bodybuilding", "Cars" ];
+    const hobbyList = document.getElementById("hobbies");
+
+    hobbies.forEach(hobby => {
+        const li = document.createElement("li");
+        li.textContent = hobby;
+        hobbyList.appendChild(li);
+    });
+});
